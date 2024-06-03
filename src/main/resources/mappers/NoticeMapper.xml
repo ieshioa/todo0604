@@ -18,6 +18,16 @@
         FROM calendar_user
         WHERE calendar_id = #{calendarId}
     </select>
+    <select id="getCalendarName">
+        SELECT title
+        FROM calendar
+        WHERE calendar_id = #{calendarId}
+    </select>
+    <select id="getUserName">
+        SELECT name
+        FROM user
+        WHERE user_id = #{userId}
+    </select>
 
     <select id="getNoticeList">
         SELECT A.notice_id AS noticeId, A.calendar_id AS calendarId

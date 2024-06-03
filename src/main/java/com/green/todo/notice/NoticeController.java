@@ -3,6 +3,7 @@ package com.green.todo.notice;
 import com.green.todo.common.CommonUtils;
 import com.green.todo.common.model.ResultDto;
 import com.green.todo.notice.model.req.NoticePostReq;
+import com.green.todo.notice.model.req.TestReq;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -19,9 +20,10 @@ public class NoticeController {
     private final NoticeService service;
     private final CommonUtils utils;
 
-//    @PostMapping("new_member")
-//    @Operation(summary = "새로운 멤버가 추가되었을 때 알림")
-//    public ResultDto<Long> newMemberNotice (@RequestBody NoticePostReq p){
-//
-//    }
+    @PostMapping
+    @Operation(summary = "실험용 post", description = "캘린더에 새로운 멤버가 추가되었을 때")
+    public int test (@RequestBody TestReq p){
+        service.newMemberNotice(p.getCalendarId(), p.getUserId());
+        return 0;
+    }
 }

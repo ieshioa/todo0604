@@ -4,6 +4,7 @@ spring:
     url: jdbc:log4jdbc:mariadb://localhost:3306/todo
     username: root
     password: green502
+  #  password: maria1209
   servlet:
     multipart:
       max-file-size: 5MB  # 이거 안해주면 디폴트가 1메가임

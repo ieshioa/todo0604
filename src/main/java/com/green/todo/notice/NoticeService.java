@@ -13,9 +13,12 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class NoticeService {
-    private NoticeMapper mapper;
+    private final NoticeMapper mapper;
     NoticeContent contents = new NoticeContent();
     public void newMemberNotice(long calendarId, long newUserId) {
+        contents.setCalendarName(mapper.getCalendarName(calendarId));
+        contents.setNewUserName(mapper.getUserName(newUserId));
+        
         NoticePostReq p1 = new NoticePostReq();
         p1.setCalendarId(calendarId);
         p1.setContent(contents.getNewMemToOther());
@@ -27,8 +30,6 @@ public class NoticeService {
         }
 
         NoticePostReq p2 = new NoticePostReq();
-        contents.setCalendarName(mapper.getCalendarName(calendarId));
-        contents.setNewUserName(mapper.getUserName(newUserId));
         p2.setCalendarId(calendarId);
         p2.setContent(contents.getNewMemToOne());
         mapper.insertNotice(p2);  // 초대당한 사람한테 보내기
