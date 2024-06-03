@@ -18,7 +18,7 @@ public class NoticeService {
     public void newMemberNotice(long calendarId, long newUserId) {
         contents.setCalendarName(mapper.getCalendarName(calendarId));
         contents.setNewUserName(mapper.getUserName(newUserId));
-        
+
         NoticePostReq p1 = new NoticePostReq();
         p1.setCalendarId(calendarId);
         p1.setContent(contents.getNewMemToOther());
@@ -28,6 +28,7 @@ public class NoticeService {
             NoticeListPostReq p = new NoticeListPostReq(p1.getNoticeId(), mem);
             mapper.insertNoticeList(p);
         }
+
 
         NoticePostReq p2 = new NoticePostReq();
         p2.setCalendarId(calendarId);
