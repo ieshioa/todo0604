@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.green.todo.notice.NoticeMapper">
+
+    <insert id="insertNotice" useGeneratedKeys="true" keyProperty="noticeId">
+        INSERT INTO notice
+        SET calendar_id = #{calendarId}
+            , content = #{content}
+    </insert>
+    <insert id="insertNoticeList">
+        INSERT INTO notice_list
+        SET notice_id = #{noticeId}
+        , user_id = #{userId}
+    </insert>
+    <select id="getCalendarMember">
+        SELECT user_id
+        FROM calendar_user
+        WHERE calendar_id = #{calendarId}
+    </select>
+
+    <select id="getNoticeList">
+        SELECT A.notice_id AS noticeId, A.calendar_id AS calendarId
+            , A.content, B.created_at AS createdAt, B.updated_at AS updatedAt
+        FROM notice A
+        JOIN notice_list B
+        ON A.notice_id = B.notice_id
+        WHERE B.user_id = #{signedUserId}
+        ORDER BY notice_id DESC
+    </select>
+
+
+</mapper>

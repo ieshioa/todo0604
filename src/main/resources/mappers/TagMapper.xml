@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.green.todo.tag.TagMapper">
+
+    <insert id="insertTag" useGeneratedKeys="true" keyProperty="tagId">
+        INSERT INTO tag
+        SET calendar_id = #{calendarId}
+            , title = #{title}
+            , color = #{color}
+    </insert>
+    <select id="getTag">
+        SELECT tag_id AS tagId, calendar_id AS calendarId, title, color
+            , created_at AS createdAt, updated_at AS updatedAt
+        FROM tag
+        WHERE title = #{title}
+            AND calendar_id = #{calendarId}
+    </select>
+
+    <update id="updateTag">
+        UPDATE tag
+        <set>
+            <if test="title != null and title != ''">
+                title = #{title}
+            </if>
+            <if test="color != null and color != '' and color > 0">
+                , color = #{color}
+            </if>
+        </set>
+        WHERE tag_id = #{tagId}
+            AND calendar_id = #{calendarId}
+    </update>
+
+    <delete id="deleteTag">
+        DELETE FROM tag
+        WHERE tag_id = #{tagId}
+        AND (
+            SELECT calendar_id
+            FROM calendar_user
+            WHERE user_id = #{signedUserId}
+        )	= #{calendarId}
+    </delete>
+
+</mapper>
