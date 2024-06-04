@@ -4,6 +4,9 @@ import com.green.todo.notice.model.NoticeContent;
 import com.green.todo.notice.model.req.NoticeListPostReq;
 import com.green.todo.notice.model.req.NoticePostReq;
 import com.green.todo.notice.model.req.NoticeReq;
+import com.green.todo.notice.model.req.NoticeUpdateReq;
+import com.green.todo.notice.model.res.NoticeGetRes;
+import com.green.todo.notice.model.res.NoticeListRes;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -16,6 +19,8 @@ import java.util.List;
 public class NoticeService {
     private final NoticeMapper mapper;
     NoticeContent contents = new NoticeContent();
+
+// post ======================================================================
 
     // NoticeReq = 캘린더 PK, 새로 추가된 유저 PK
     public void newMemberNotice(NoticeReq p) {
@@ -75,4 +80,34 @@ public class NoticeService {
             }
         }
     }
+
+// get ======================================================================
+    public NoticeListRes getNoticeList (Long userId) {
+        if(userId == null || userId < 0) {
+            throw new RuntimeException("유저 PK를 입력해주세요.");
+        }
+        int notRead = mapper.notRead(userId);
+        List<NoticeGetRes> list = mapper.getNoticeList(userId);
+        NoticeListRes result = new NoticeListRes();
+        result.setNotice(list);
+        result.setNotRead(notRead);
+        return result;
+    }
+
+// update ======================================================================
+    public int noticeUpdate(NoticeUpdateReq p) {
+        if(p.getNoticeId() == null || p.getNoticeId() < 0) {
+            throw new RuntimeException("알림 PK를 입력해주세요.");
+        }
+        if(p.getSignedUserId() == null || p.getSignedUserId() < 0){
+            throw new RuntimeException("로그인된 유저의 PK를 입력해주세요.");
+        }
+        int result = mapper.updateNotice(p);
+        if(result != 1) {
+            throw new RuntimeException("알림 업데이트 실패");
+        }
+        return result;
+    }
+
+
 }
