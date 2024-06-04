@@ -5,6 +5,8 @@ import com.green.todo.comment.model.req.CommentPostReq;
 import com.green.todo.comment.model.req.CommentUpdateReq;
 import com.green.todo.comment.model.res.CommentGetRes;
 import com.green.todo.common.CommonUtils;
+import com.green.todo.notice.NoticeService;
+import com.green.todo.notice.model.req.NoticeReq;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -17,6 +19,8 @@ import java.util.List;
 public class CommentService {
     private final CommentMapper mapper;
     private final CommonUtils utils;
+    private final NoticeService noticeService;
+
     public long postComment(CommentPostReq p) {
         if(p.getContent() == null || p.getContent().isEmpty()) {
             throw new RuntimeException("댓글을 입력해주세요.");
@@ -27,6 +31,9 @@ public class CommentService {
         if(mapper.insComment(p) != 1) {
             throw new RuntimeException("댓글을 작성할 수 없습니다.");
         }
+        // 댓글 알림 보내기
+        NoticeReq notice = new NoticeReq(p.getCalendarId(), p.getSignedUserId());
+        noticeService.newCommentNotice(notice, p.getBoardId());
         return p.getCommentId();
     }
 

@@ -16,4 +16,6 @@ public class CommentPostReq {
     private Long signedUserId;
     @Schema(example = "댓글 내용", description = "너 나가")
     private String content;
+    @Schema(example = "2", description = "캘린더 PK")
+    private Long calendarId;
 }
