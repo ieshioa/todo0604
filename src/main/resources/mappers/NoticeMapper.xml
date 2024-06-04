@@ -8,11 +8,13 @@
         SET calendar_id = #{calendarId}
             , content = #{content}
     </insert>
+
     <insert id="insertNoticeList">
         INSERT INTO notice_list
         SET notice_id = #{noticeId}
         , user_id = #{userId}
     </insert>
+
     <select id="getCalendarMember">
         SELECT user_id
         FROM calendar_user
@@ -27,6 +29,11 @@
         SELECT name
         FROM user
         WHERE user_id = #{userId}
+    </select>
+    <select id="getBoardName">
+        SELECT title
+        FROM board
+        WHERE board_id = #{boardId}
     </select>
 
     <select id="getNoticeList">
