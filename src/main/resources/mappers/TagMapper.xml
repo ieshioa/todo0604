@@ -9,7 +9,17 @@
             , title = #{title}
             , color = #{color}
     </insert>
-    <select id="getTag">
+
+    <insert id="insertBoardTag">
+        INSERT INTO board_tag
+        (board_id, tag_id)
+        VALUES
+        <foreach collection="tags" item="tagId" separator=",">
+            (#{boardId}, #{tagId})
+        </foreach>
+    </insert>
+
+    <select id="getTagForCheckTitle">
         SELECT tag_id AS tagId, calendar_id AS calendarId, title, color
             , created_at AS createdAt, updated_at AS updatedAt
         FROM tag
@@ -17,28 +27,23 @@
             AND calendar_id = #{calendarId}
     </select>
 
-    <update id="updateTag">
-        UPDATE tag
-        <set>
-            <if test="title != null and title != ''">
-                title = #{title}
-            </if>
-            <if test="color != null and color != '' and color > 0">
-                , color = #{color}
-            </if>
-        </set>
+    <select id="getTagByTagId">
+        SELECT tag_id
+        FROM board_tag
         WHERE tag_id = #{tagId}
-            AND calendar_id = #{calendarId}
-    </update>
+    </select>
 
     <delete id="deleteTag">
         DELETE FROM tag
         WHERE tag_id = #{tagId}
-        AND (
-            SELECT calendar_id
-            FROM calendar_user
-            WHERE user_id = #{signedUserId}
-        )	= #{calendarId}
+    </delete>
+
+    <delete id="deleteBoardTag">
+        DELETE FROM board_tag
+        WHERE (board_id, tag_id) IN
+        <foreach collection="p" item="item" separator=", " open="(" close=")">
+            (#{item.boardId}, #{item.tagId})
+        </foreach>
     </delete>
 
 </mapper>

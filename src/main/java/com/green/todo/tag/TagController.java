@@ -1,20 +1,14 @@
 package com.green.todo.tag;
 
 import com.green.todo.common.CommonUtils;
-import com.green.todo.common.model.ResultDto;
-import com.green.todo.tag.model.req.TagDeleteReq;
 import com.green.todo.tag.model.req.TagPostReq;
-import com.green.todo.tag.model.req.TagUpdateReq;
-import com.green.todo.tag.model.res.TagUpdateRes;
-import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springdoc.core.annotations.ParameterObject;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import static com.green.todo.common.model.ResultDto.resultDto;
+import java.util.ArrayList;
+import java.util.List;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -26,44 +20,33 @@ public class TagController {
     private final CommonUtils utils;
 
     @PostMapping
-    @Operation(summary = "태그 post", description = "태그 PK를 리턴함")
-    public ResultDto<Long> tagPost(@RequestBody TagPostReq p) {
-        utils.init("태그를 생성하였습니다.");
-        long result = 0;
-        try {
-            result = service.tagPost(p);
-        } catch (Exception e) {
-            utils.noAcceptable(e);
-        }
-        return resultDto(utils.getCode(), utils.getMsg(), result);
-    }
+    public int test() {
+        List<Long> list1 = new ArrayList<>();
+        list1.add(100L);
+        List<TagPostReq> list2 = new ArrayList<>();
+//        TagPostReq p1 = new TagPostReq();
+//        p1.setTitle("태그테스트1");
+//        p1.setColor(1);
+//        p1.setCalendarId(1L);
+//
+//        TagPostReq p2 = new TagPostReq();
+//        p2.setTitle("태그테스트2");
+//        p2.setColor(2);
+//        p2.setCalendarId(1L);
 
-    @PutMapping
-    @Operation(summary = "태그 update", description = "태그 PK, 이름, 색상을 리턴함")
-    public ResultDto<TagUpdateRes> updateTag (@RequestBody TagUpdateReq p) {
-        utils.init("태그 수정을 완료하였습니다.");
-        TagUpdateRes result = new TagUpdateRes();
-        try {
-            service.updateTag(p);
-            result.setTagId(p.getTagId());
-            result.setTitle(p.getTitle());
-            result.setColor(p.getColor());
-        } catch (Exception e) {
-            utils.noAcceptable(e);
-        }
-        return resultDto(utils.getCode(), utils.getMsg(),result);
+//        list2.add(p1);
+//        list2.add(p2);
+        int r = service.tagPost(list1, list2, 1);
+        return r;
     }
 
     @DeleteMapping
-    @Operation(summary = "태그 delete", description = "삭제가 완료되면 1을 리턴함")
-    public ResultDto<Integer> deleteTag(@ParameterObject @ModelAttribute TagDeleteReq p) {
-        utils.init("태그 삭제를 완료하였습니다.");
-        int result = 0;
-        try {
-            result = service.deleteTag(p);
-        } catch (Exception e) {
-            utils.noAcceptable(e);
-        }
-        return resultDto(utils.getCode(), utils.getMsg(),result);
+    public int del() {
+        List<Long> list1 = new ArrayList<>();
+        list1.add(100L);
+        int r = service.tagDelete(list1,1);
+        return r;
     }
+
+
 }
