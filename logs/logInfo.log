@@ -1901,3 +1901,5 @@ Caused by: org.xml.sax.SAXParseException: 요소 유형 "delete"은(는) 짝이 
                     WHERE tag_id = 7
                 )
  {executed in 1 msec}[0;39m
+[2024-06-05 17:02:31 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-06-05 17:02:31 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m

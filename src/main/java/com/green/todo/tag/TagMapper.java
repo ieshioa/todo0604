@@ -12,7 +12,7 @@ public interface TagMapper {
     int insertBoardTag(BoardTagPostReq p);
 
     TagEntity getTagForCheckTitle(TagGetReq p);
-    List<Long> getTagByTagId(long tagId);
+    List<Long> getTagByBoardId(long boardId);
 
     int deleteTagPermanent(long tagId);
     int deleteBoardTag(List<BoardTagDeleteReq> p);

@@ -27,10 +27,10 @@
             AND calendar_id = #{calendarId}
     </select>
 
-    <select id="getTagByTagId">
+    <select id="getTagByBoardId">
         SELECT tag_id
         FROM board_tag
-        WHERE tag_id = #{tagId}
+        WHERE board_id = #{boardId}
     </select>
 
     <delete id="deleteTagPermanent">

@@ -41,7 +41,7 @@ public class TagService {
     @Transactional
     public int tagDelete(List<Long> deltagList, long boardId) {
         int result = delBoardTag(deltagList, boardId);   // 보드_태그 테이블에서 삭제
-        deleteTagPermanent(deltagList);     // 태그 테이블에서 삭제
+        deleteTagPermanent(deltagList, boardId);     // 태그 테이블에서 삭제
         return result;
     }
 
@@ -60,7 +60,10 @@ public class TagService {
         }
     }
 
-    public void deleteTagPermanent(List<Long> deltagList) {
+    public void deleteTagPermanent(List<Long> deltagList, long boardId) {
+        if(deltagList == null) {
+            deltagList = mapper.getTagByBoardId(boardId);
+        }
         try {
             for(Long tagId : deltagList) {
                 mapper.deleteTagPermanent(tagId);
