@@ -40,6 +40,9 @@ public class TagService {
 
     @Transactional
     public int tagDelete(List<Long> deltagList, long boardId) {
+        if(deltagList == null || deltagList.isEmpty()) {    // 삭제할 태그 없음
+            return 1;
+        }
         int result = delBoardTag(deltagList, boardId);   // 보드_태그 테이블에서 삭제
         deleteTagPermanent(deltagList, boardId);     // 태그 테이블에서 삭제
         return result;
