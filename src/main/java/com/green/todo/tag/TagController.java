@@ -43,8 +43,12 @@ public class TagController {
     @DeleteMapping
     public int del() {
         List<Long> list1 = new ArrayList<>();
-        list1.add(100L);
-        int r = service.tagDelete(list1,1);
+        list1.add(2L);
+        list1.add(3L);
+        list1.add(5L);
+        list1.add(6L);
+        list1.add(7L);
+        int r = service.tagDelete(list1, 1);
         return r;
     }
 

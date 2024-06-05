@@ -41,12 +41,7 @@ public class TagService {
     @Transactional
     public int tagDelete(List<Long> deltagList, long boardId) {
         int result = delBoardTag(deltagList, boardId);   // 보드_태그 테이블에서 삭제
-        for(Long tagId : deltagList) {      // 사용된 곳이 없으면 완전삭제
-            List<Long> list = mapper.getTagByTagId(tagId);
-            if (list == null || list.isEmpty()) {
-                mapper.deleteTag(tagId);
-            }
-        }
+        deleteTagPermanent(deltagList);     // 태그 테이블에서 삭제
         return result;
     }
 
@@ -65,13 +60,27 @@ public class TagService {
         }
     }
 
+    public void deleteTagPermanent(List<Long> deltagList) {
+        try {
+            for(Long tagId : deltagList) {
+                mapper.deleteTagPermanent(tagId);
+            }
+        } catch (Exception e) {
+            throw new RuntimeException("tag 삭제 오류");
+        }
+    }
+
     public int delBoardTag(List<Long> delList, long boardId) {
         List<BoardTagDeleteReq> list = new ArrayList<>();
-        for(Long item : delList) {
-            BoardTagDeleteReq p = new BoardTagDeleteReq();
-            p.setBoardId(boardId);
-            p.setTagId(item);
-            list.add(p);
+        try {
+            for(Long item : delList) {
+                BoardTagDeleteReq p = new BoardTagDeleteReq();
+                p.setBoardId(boardId);
+                p.setTagId(item);
+                list.add(p);
+            }
+        } catch (Exception e) {
+            throw new RuntimeException("board_tag 삭제 오류");
         }
         return mapper.deleteBoardTag(list);
     }

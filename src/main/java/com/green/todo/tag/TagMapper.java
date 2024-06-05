@@ -14,6 +14,6 @@ public interface TagMapper {
     TagEntity getTagForCheckTitle(TagGetReq p);
     List<Long> getTagByTagId(long tagId);
 
-    int deleteTag(long tagId);
+    int deleteTagPermanent(long tagId);
     int deleteBoardTag(List<BoardTagDeleteReq> p);
 }

@@ -33,9 +33,14 @@
         WHERE tag_id = #{tagId}
     </select>
 
-    <delete id="deleteTag">
-        DELETE FROM tag
-        WHERE tag_id = #{tagId}
+    <delete id="deleteTagPermanent">
+            DELETE FROM tag
+            WHERE tag_id = #{tagId}
+            AND NOT EXISTS (
+                    SELECT 1
+                    FROM board_tag
+                    WHERE tag_id = #{tagId}
+                )
     </delete>
 
     <delete id="deleteBoardTag">

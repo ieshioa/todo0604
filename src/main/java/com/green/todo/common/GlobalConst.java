@@ -10,3 +10,5 @@ public class GlobalConst {
     public static final int NUM_DIGITS = 10;  // 숫자 10개
     public static final int NUM_LETTERS  = 26;  // 문자 26개
 }
+
+

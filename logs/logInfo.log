@@ -1338,3 +1338,566 @@ java.lang.RuntimeException: 태그의 이름이 중복됩니다.
 [2024-06-05 15:52:09 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
 [2024-06-05 15:52:09 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mStarted TodoApplication in 0.542 seconds (process running for 84.163)[0;39m
 [2024-06-05 15:52:09 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2024-06-05 16:46:10 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mStarting TodoApplication using Java 17.0.10 with PID 11212 (C:\Users\Administrator\Desktop\todo\build\classes\java\main started by Administrator in C:\Users\Administrator\Desktop\todo)[0;39m
+[2024-06-05 16:46:10 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-05 16:46:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-06-05 16:46:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-06-05 16:46:11 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-05 16:46:11 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-05 16:46:11 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-05 16:46:11 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-05 16:46:11 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-05 16:46:11 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 978 ms[0;39m
+[2024-06-05 16:46:12 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] [36mCannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)[0;39m
+[2024-06-05 16:46:12 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-05 16:46:12 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-06-05 16:46:12 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-05 16:46:12 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-06-05 16:46:12 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mStarted TodoApplication in 2.027 seconds (process running for 2.37)[0;39m
+[2024-06-05 16:46:12 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.207] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-06-05 16:46:12 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.207] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-06-05 16:46:12 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.207] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2024-06-05 16:46:12 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.207] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-06-05 16:46:12 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.207] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@61d06a06[0;39m
+[2024-06-05 16:46:12 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.207] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-06-05 16:46:23 [32mINFO [0;39m http-nio-8080-exec-9] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 188 ms[0;39m
+[2024-06-05 16:46:25 [32mINFO [0;39m http-nio-8080-exec-4] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 80 ms[0;39m
+[2024-06-05 16:46:31 [32mDEBUG[0;39m http-nio-8080-exec-10] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM tag
+        WHERE tag_id IN
+         (  
+            2
+         , 
+            3
+         , 
+            5
+         , 
+            6
+         , 
+            7
+         ) 
+        AND NOT EXISTS (
+        SELECT 1
+        FROM board_tag
+        WHERE tag_id IN
+         (  
+            2
+         , 
+            3
+         , 
+            5
+         , 
+            6
+         , 
+            7
+         ) 
+        )
+ {executed in 6 msec}[0;39m
+[2024-06-05 16:48:40 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)[0;39m
+[2024-06-05 16:48:40 [32mINFO [0;39m Thread-5] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-05 16:48:40 [32mINFO [0;39m Thread-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-06-05 16:48:40 [32mINFO [0;39m Thread-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
+[2024-06-05 16:48:40 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mStarting TodoApplication using Java 17.0.10 with PID 11212 (C:\Users\Administrator\Desktop\todo\build\classes\java\main started by Administrator in C:\Users\Administrator\Desktop\todo)[0;39m
+[2024-06-05 16:48:40 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-05 16:48:41 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-05 16:48:41 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-05 16:48:41 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-05 16:48:41 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-05 16:48:41 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-05 16:48:41 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 289 ms[0;39m
+[2024-06-05 16:48:41 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] [36mCannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)[0;39m
+[2024-06-05 16:48:41 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-05 16:48:41 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-06-05 16:48:41 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-05 16:48:41 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-06-05 16:48:41 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mStarted TodoApplication in 0.509 seconds (process running for 151.327)[0;39m
+[2024-06-05 16:48:41 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2024-06-05 16:49:02 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mStarting TodoApplication using Java 17.0.10 with PID 10480 (C:\Users\Administrator\Desktop\todo\build\classes\java\main started by Administrator in C:\Users\Administrator\Desktop\todo)[0;39m
+[2024-06-05 16:49:02 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-05 16:49:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-06-05 16:49:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-06-05 16:49:03 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-05 16:49:03 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-05 16:49:03 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-05 16:49:03 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-05 16:49:03 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-05 16:49:03 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 989 ms[0;39m
+[2024-06-05 16:49:04 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] [36mCannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)[0;39m
+[2024-06-05 16:49:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-05 16:49:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-06-05 16:49:04 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-05 16:49:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-06-05 16:49:04 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mStarted TodoApplication in 2.056 seconds (process running for 2.401)[0;39m
+[2024-06-05 16:49:04 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.207] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-06-05 16:49:04 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.207] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-06-05 16:49:04 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.207] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2024-06-05 16:49:04 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.207] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-06-05 16:49:04 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.207] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@3dd6329a[0;39m
+[2024-06-05 16:49:04 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.207] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-06-05 16:49:23 [33mWARN [0;39m http-nio-8080-exec-1] [org.mariadb.jdbc.message.server.ErrorPacket] [36mError: 1064-42000: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DELETE FROM tag
+            WHERE tag_id = 3
+            AND NOT EXISTS (
+   ...' at line 9[0;39m
+[2024-06-05 16:49:23 [31mERROR[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM tag
+            WHERE tag_id = 2
+            AND NOT EXISTS (
+            SELECT 1
+            FROM board_tag
+            WHERE tag_id = 2
+            )
+         ; 
+            DELETE FROM tag
+            WHERE tag_id = 3
+            AND NOT EXISTS (
+            SELECT 1
+            FROM board_tag
+            WHERE tag_id = 3
+            )
+         ; 
+            DELETE FROM tag
+            WHERE tag_id = 5
+            AND NOT EXISTS (
+            SELECT 1
+            FROM board_tag
+            WHERE tag_id = 5
+            )
+         ; 
+            DELETE FROM tag
+            WHERE tag_id = 6
+            AND NOT EXISTS (
+            SELECT 1
+            FROM board_tag
+            WHERE tag_id = 6
+            )
+         ; 
+            DELETE FROM tag
+            WHERE tag_id = 7
+            AND NOT EXISTS (
+            SELECT 1
+            FROM board_tag
+            WHERE tag_id = 7
+            )
+ {FAILED after 1 msec}[0;39m
+java.sql.SQLSyntaxErrorException: (conn=164) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DELETE FROM tag
+            WHERE tag_id = 3
+            AND NOT EXISTS (
+   ...' at line 9
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:276)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy98.delete(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.delete(SqlSessionTemplate.java:304)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy102.deleteTagPermanent(Unknown Source)
+	at com.green.todo.tag.TagService.ddd(TagService.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at com.green.todo.tag.TagService$$SpringCGLIB$$0.ddd(<generated>)
+	at com.green.todo.tag.TagController.del(TagController.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-06-05 16:49:23 [31mERROR[0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] [36mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: (conn=164) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DELETE FROM tag
+            WHERE tag_id = 3
+            AND NOT EXISTS (
+   ...' at line 9
+### The error may exist in file [C:\Users\Administrator\Desktop\todo\build\resources\main\mappers\TagMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: DELETE FROM tag             WHERE tag_id = ?             AND NOT EXISTS (             SELECT 1             FROM board_tag             WHERE tag_id = ?             )          ;              DELETE FROM tag             WHERE tag_id = ?             AND NOT EXISTS (             SELECT 1             FROM board_tag             WHERE tag_id = ?             )          ;              DELETE FROM tag             WHERE tag_id = ?             AND NOT EXISTS (             SELECT 1             FROM board_tag             WHERE tag_id = ?             )          ;              DELETE FROM tag             WHERE tag_id = ?             AND NOT EXISTS (             SELECT 1             FROM board_tag             WHERE tag_id = ?             )          ;              DELETE FROM tag             WHERE tag_id = ?             AND NOT EXISTS (             SELECT 1             FROM board_tag             WHERE tag_id = ?             )
+### Cause: java.sql.SQLSyntaxErrorException: (conn=164) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DELETE FROM tag
+            WHERE tag_id = 3
+            AND NOT EXISTS (
+   ...' at line 9
+; bad SQL grammar []] with root cause[0;39m
+java.sql.SQLSyntaxErrorException: (conn=164) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DELETE FROM tag
+            WHERE tag_id = 3
+            AND NOT EXISTS (
+   ...' at line 9
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:276)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy98.delete(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.delete(SqlSessionTemplate.java:304)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy102.deleteTagPermanent(Unknown Source)
+	at com.green.todo.tag.TagService.ddd(TagService.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at com.green.todo.tag.TagService$$SpringCGLIB$$0.ddd(<generated>)
+	at com.green.todo.tag.TagController.del(TagController.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-06-05 16:50:45 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)[0;39m
+[2024-06-05 16:50:45 [32mINFO [0;39m Thread-5] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-05 16:50:45 [32mINFO [0;39m Thread-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-06-05 16:50:45 [32mINFO [0;39m Thread-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
+[2024-06-05 16:50:45 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mStarting TodoApplication using Java 17.0.10 with PID 10480 (C:\Users\Administrator\Desktop\todo\build\classes\java\main started by Administrator in C:\Users\Administrator\Desktop\todo)[0;39m
+[2024-06-05 16:50:45 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-05 16:50:46 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-05 16:50:46 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-05 16:50:46 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-05 16:50:46 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-05 16:50:46 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-05 16:50:46 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 288 ms[0;39m
+[2024-06-05 16:50:46 [33mWARN [0;39m restartedMain] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] [36mException encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commentController' defined in file [C:\Users\Administrator\Desktop\todo\build\classes\java\main\com\green\todo\comment\CommentController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'commentService' defined in file [C:\Users\Administrator\Desktop\todo\build\classes\java\main\com\green\todo\comment\CommentService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'commentMapper' defined in file [C:\Users\Administrator\Desktop\todo\build\classes\java\main\com\green\todo\comment\CommentMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'[0;39m
+[2024-06-05 16:50:46 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStopping service [Tomcat][0;39m
+[2024-06-05 16:50:46 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] [36m
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.[0;39m
+[2024-06-05 16:50:46 [31mERROR[0;39m restartedMain] [org.springframework.boot.SpringApplication] [36mApplication run failed[0;39m
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commentController' defined in file [C:\Users\Administrator\Desktop\todo\build\classes\java\main\com\green\todo\comment\CommentController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'commentService' defined in file [C:\Users\Administrator\Desktop\todo\build\classes\java\main\com\green\todo\comment\CommentService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'commentMapper' defined in file [C:\Users\Administrator\Desktop\todo\build\classes\java\main\com\green\todo\comment\CommentMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.green.todo.TodoApplication.main(TodoApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commentService' defined in file [C:\Users\Administrator\Desktop\todo\build\classes\java\main\com\green\todo\comment\CommentService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'commentMapper' defined in file [C:\Users\Administrator\Desktop\todo\build\classes\java\main\com\green\todo\comment\CommentMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commentMapper' defined in file [C:\Users\Administrator\Desktop\todo\build\classes\java\main\com\green\todo\comment\CommentMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1685)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 38 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [C:\Users\Administrator\Desktop\todo\build\resources\main\mappers\TagMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 52 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [C:\Users\Administrator\Desktop\todo\build\resources\main\mappers\TagMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 62 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [C:\Users\Administrator\Desktop\todo\build\resources\main\mappers\TagMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 76 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [C:\Users\Administrator\Desktop\todo\build\resources\main\mappers\TagMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:700)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:577)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:720)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 77 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 44; columnNumber: 11; 요소 유형 "delete"은(는) 짝이 맞는 종료 태그 "</delete>"(으)로 종료되어야 합니다.
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:262)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:85)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:697)
+	... 85 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 요소 유형 "delete"은(는) 짝이 맞는 종료 태그 "</delete>"(으)로 종료되어야 합니다.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1695)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:260)
+	... 88 common frames omitted
+[2024-06-05 16:53:31 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mStarting TodoApplication using Java 17.0.10 with PID 5812 (C:\Users\Administrator\Desktop\todo\build\classes\java\main started by Administrator in C:\Users\Administrator\Desktop\todo)[0;39m
+[2024-06-05 16:53:31 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-05 16:53:31 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-06-05 16:53:31 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-06-05 16:53:32 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-05 16:53:32 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-05 16:53:32 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-05 16:53:32 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-05 16:53:32 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-05 16:53:32 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 1011 ms[0;39m
+[2024-06-05 16:53:33 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] [36mCannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)[0;39m
+[2024-06-05 16:53:33 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-05 16:53:33 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-06-05 16:53:33 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-05 16:53:33 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-06-05 16:53:33 [32mINFO [0;39m restartedMain] [com.green.todo.TodoApplication] [36mStarted TodoApplication in 2.139 seconds (process running for 2.492)[0;39m
+[2024-06-05 16:53:33 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.207] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-06-05 16:53:33 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.207] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-06-05 16:53:33 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.207] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-06-05 16:53:33 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.207] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2024-06-05 16:53:33 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.207] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@3127a2b9[0;39m
+[2024-06-05 16:53:34 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.207] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-06-05 16:53:36 [32mINFO [0;39m http-nio-8080-exec-8] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 201 ms[0;39m
+[2024-06-05 16:53:39 [32mDEBUG[0;39m http-nio-8080-exec-6] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM tag
+            WHERE tag_id = 2
+            AND NOT EXISTS (
+                    SELECT 1
+                    FROM board_tag
+                    WHERE tag_id = 2
+                )
+ {executed in 1 msec}[0;39m
+[2024-06-05 16:53:39 [32mDEBUG[0;39m http-nio-8080-exec-6] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM tag
+            WHERE tag_id = 3
+            AND NOT EXISTS (
+                    SELECT 1
+                    FROM board_tag
+                    WHERE tag_id = 3
+                )
+ {executed in 6 msec}[0;39m
+[2024-06-05 16:53:39 [32mDEBUG[0;39m http-nio-8080-exec-6] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM tag
+            WHERE tag_id = 5
+            AND NOT EXISTS (
+                    SELECT 1
+                    FROM board_tag
+                    WHERE tag_id = 5
+                )
+ {executed in 1 msec}[0;39m
+[2024-06-05 16:53:39 [32mDEBUG[0;39m http-nio-8080-exec-6] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM tag
+            WHERE tag_id = 6
+            AND NOT EXISTS (
+                    SELECT 1
+                    FROM board_tag
+                    WHERE tag_id = 6
+                )
+ {executed in 1 msec}[0;39m
+[2024-06-05 16:53:39 [32mDEBUG[0;39m http-nio-8080-exec-6] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. DELETE FROM tag
+            WHERE tag_id = 7
+            AND NOT EXISTS (
+                    SELECT 1
+                    FROM board_tag
+                    WHERE tag_id = 7
+                )
+ {executed in 1 msec}[0;39m
